@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta Gás do Povo | Auxílio Gás: quem tem direito e como consultar</title>
+    <meta
+      name="description"
+      content="Entenda quem pode ter direito ao benefício do gás, como consultar pelos canais oficiais e veja orientações práticas em linguagem simples."
+    />
+    <meta
+      name="keywords"
+      content="Auxílio Gás, Gás do Povo, consulta benefício gás, CadÚnico, Bolsa Família, CAIXA Tem, Portal Cidadão"
+    />
+    <meta name="theme-color" content="#0b4b8f" />
+    <meta property="og:title" content="Consulta Gás do Povo / Auxílio Gás" />
+    <meta
+      property="og:description"
+      content="Site informativo para entender o benefício do gás, descobrir perfil e consultar pelos canais oficiais."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a class="brand" href="#inicio" aria-label="Ir para início">Consulta Gás</a>
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+        <nav id="menu" class="menu" aria-label="Navegação principal">
+          <a href="#direito">Quem tem direito</a>
+          <a href="#consulta">Como consultar</a>
+          <a href="#simulador">Simulador</a>
+          <a href="#faq">FAQ</a>
+          <a href="#transparencia">Transparência</a>
+          <a href="#apoie">Apoie</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section id="inicio" class="hero reveal">
+        <div class="container hero-grid">
+          <div>
+            <p class="badge">Guia cidadão • Informativo</p>
+            <h1>Como saber se você tem direito ao benefício do gás?</h1>
+            <p>
+              Este site ajuda você a entender o benefício conhecido por muitas pessoas como
+              <strong>Auxílio Gás</strong> e também como <strong>Gás do Povo</strong>, com orientações claras para consulta
+              nos canais oficiais.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#consulta">Ver como consultar</a>
+              <a class="btn btn-secondary" href="#direito">Quem tem direito?</a>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Resumo rápido">
+            <h2>Resumo rápido</h2>
+            <ul>
+              <li>✔ Veja os principais canais oficiais</li>
+              <li>✔ Entenda critérios de perfil</li>
+              <li>✔ Faça um simulador orientativo</li>
+              <li>✔ Tire dúvidas frequentes sem sair do site</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="direito" class="section reveal">
+        <div class="container">
+          <h2>Quem pode ter direito</h2>
+          <p class="lead">A concessão depende das regras oficiais vigentes e da análise de elegibilidade do governo.</p>
+          <div class="cards">
+            <article class="card">
+              <span class="icon" aria-hidden="true">👨‍👩‍👧‍👦</span>
+              <h3>Famílias de baixa renda</h3>
+              <p>O benefício é voltado, em geral, para famílias em situação de vulnerabilidade social.</p>
+            </article>
+            <article class="card">
+              <span class="icon" aria-hidden="true">🧾</span>
+              <h3>Inscrição no CadÚnico</h3>
+              <p>Estar inscrito no Cadastro Único é um passo importante para integrar a base de avaliação.</p>
+            </article>
+            <article class="card">
+              <span class="icon" aria-hidden="true">🎯</span>
+              <h3>Prioridades sociais</h3>
+              <p>Alguns grupos em programas sociais podem ter prioridade, conforme normas em vigor.</p>
+            </article>
+          </div>
+          <div class="alert" role="note">
+            <strong>Atenção:</strong> A confirmação oficial deve ser feita pelos canais do governo.
+          </div>
+        </div>
+      </section>
+
+      <section id="consulta" class="section reveal">
+        <div class="container">
+          <h2>Como consultar</h2>
+          <p class="lead">Clique em um canal para ver orientação prática, passo a passo e atalho útil.</p>
+          <div class="channel-layout">
+            <div class="channel-tabs" role="tablist" aria-label="Canais de consulta"></div>
+            <div class="channel-panel" id="channel-panel" role="region" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="simulador" class="section reveal">
+        <div class="container">
+          <h2>Simulador orientativo</h2>
+          <p class="lead">Este simulador não aprova nem reprova benefício. Ele só orienta próximos passos.</p>
+          <form id="sim-form" class="sim-form">
+            <fieldset>
+              <legend>Responda com sinceridade para receber orientação:</legend>
+              <label><input type="checkbox" name="cadunico" /> Você está inscrito no CadÚnico?</label>
+              <label><input type="checkbox" name="bolsa" /> Você recebe Bolsa Família?</label>
+              <label><input type="checkbox" name="atualizado" /> Seu cadastro familiar está atualizado?</label>
+              <label><input type="checkbox" name="caixa" /> Você já consultou no app da CAIXA?</label>
+              <label><input type="checkbox" name="mensagens" /> Você já verificou mensagens e extratos?</label>
+            </fieldset>
+            <button class="btn btn-primary" type="submit">Ver orientação</button>
+          </form>
+          <div id="sim-result" class="sim-result" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="faq" class="section reveal">
+        <div class="container">
+          <h2>Perguntas frequentes</h2>
+          <div class="faq-list">
+            <details><summary>Como saber se tenho Auxílio Gás?</summary><p>Consulte pelos aplicativos oficiais (Bolsa Família e CAIXA Tem), Portal Cidadão e telefones 111/121.</p></details>
+            <details><summary>O Auxílio Gás ainda existe com esse nome?</summary><p>Muitas pessoas ainda usam esse nome. Em comunicações recentes, você também pode encontrar referências como Gás do Povo.</p></details>
+            <details><summary>Onde consultar pelo CPF?</summary><p>Verifique os canais oficiais da CAIXA e do governo quando houver opção disponível para consulta por CPF.</p></details>
+            <details><summary>O aplicativo Bolsa Família mostra esse benefício?</summary><p>Sim, pode exibir informações de pagamentos e mensagens relacionadas, conforme disponibilidade da conta.</p></details>
+            <details><summary>O Caixa Tem mostra?</summary><p>Sim, pode mostrar créditos e movimentações. Sempre confira também extrato e notificações no app.</p></details>
+            <details><summary>Posso descobrir pelo telefone?</summary><p>Sim. Você pode ligar para 111 (CAIXA) e 121 (Ministério do Desenvolvimento e Assistência Social).</p></details>
+            <details><summary>O benefício cai automaticamente?</summary><p>Quando há elegibilidade confirmada dentro das regras vigentes, o pagamento ocorre conforme calendário oficial.</p></details>
+            <details><summary>O que fazer se eu acho que tenho direito mas não aparece?</summary><p>Atualize cadastro no CRAS, confira dados no CadÚnico e procure os canais oficiais para orientação detalhada.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section id="transparencia" class="section reveal">
+        <div class="container trust">
+          <h2>Confiança e transparência</h2>
+          <p>🔒 Este site é <strong>informativo</strong> e não substitui os canais oficiais.</p>
+          <ul>
+            <li>Não solicita senha de aplicativo, dados bancários ou documentos sensíveis desnecessários.</li>
+            <li>Recomenda sempre confirmar informações em fontes públicas do governo e da CAIXA.</li>
+            <li>As regras de elegibilidade podem mudar conforme legislação e normas oficiais.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="apoie" class="footer reveal">
+      <div class="container">
+        <h2>Gostou do site? Isso resolveu seu problema?</h2>
+        <p>Se este conteúdo te ajudou, você pode apoiar com um Pix simbólico de <strong>R$ 1,00 💛</strong>.</p>
+        <div class="pix-box">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=ymenephyl%40gmail.com"
+            alt="QR Code Pix para apoio ao projeto"
+            loading="lazy"
+          />
+          <div>
+            <p><strong>Chave Pix:</strong> <span id="pix-key">ymenephyl@gmail.com</span></p>
+            <button id="copy-pix" class="btn btn-secondary" type="button">Copiar chave Pix</button>
+            <p id="copy-status" class="copy-status" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
